@@ -34,7 +34,7 @@
   <launchable type="desktop-id">org.hikounomizu.HikouNoMizu.desktop</launchable>
   <screenshots>
     <screenshot type="default">
-      <image>https://download.tuxfamily.org/hnm/0.8.9/screenshots/screen4.png</image>
+      <image>https://download.tuxfamily.org/hnm/0.8.9/screenshots/screen5.png</image>
     </screenshot>
     <screenshot>
       <image>https://download.tuxfamily.org/hnm/0.9/screenshots/screen4.png</image>
@@ -58,52 +58,22 @@
     <release version="0.9" date="2022-01-17">
       <description>
         <ul>
-          <li>Audio &amp; Sound
-            <ul>
-              <li>Added a flexible sound effect system
-                <ul>
-                  <li>Sound effects are described for each animation</li>
-                  <li>Variation of pitch to increase realism</li>
-                </ul>
-              </li>
-              <li>Footstep sounds depend on the ground material</li>
-              <li>Added weapon hit, ground hit, and air friction sound effects</li>
-              <li>Added several musics for fight scenes</li>
-              <li>Added UI sounds for character &amp; arena selection</li>
-            </ul>
-          </li>
-            
-          <li>Graphics
-            <ul>
-              <li>Automated scaling of the framesets generated from source animations</li>
-              <li>Animations regenerated, scaled up for a 1080p gameplay</li>
-              <li>Smooth movement of the dynamic fight camera</li>
-              <li>Takino: Redrawn default punch animation</li>
-              <li>More flexible display mode option, especially windowed</li>
-              <li>UI elements scale to match the display mode</li>
-            </ul>
-          </li>
-            
-          <li>Gameplay
-            <ul>
-              <li>Added a jump state, with its own attacks and hit animations</li>
-              <li>Added a versus mode, two players always facing each other</li>
-              <li>Added a specific camera zoom level per arena</li>
-              <li>Added a remaining throwable weapon interface counter</li>
-              <li>Physics of throwable weapons improved</li>
-              <li>Starting position of players improved</li>
-            </ul>
-          </li>
-            
-          <li>UI &amp; Options
-            <ul>
-              <li>Added sound volume control sliders</li>
-              <li>Moved key binders to a new tab</li>
-              <li>Removed 'apply' button in the options</li>
-              <li>Pressing escape resets the main menu</li>
-              <li>Text height computation fixed</li>
-            </ul>
-          </li>
+          <li>Added a flexible sound effect system</li>
+          <li>Footstep sounds depend on the ground material</li>
+          <li>Added weapon hit, ground hit, and air friction sound effects</li>
+          <li>Added several musics for fight scenes</li>
+          
+          <li>Animations regenerated, scaled up for a 1080p gameplay</li>
+          <li>Smooth movement of the dynamic fight camera</li>
+          <li>Takino: Redrawn default punch animation</li>
+          <li>More flexible display mode option, especially windowed</li>
+          <li>UI elements scale to match the display mode</li>
+          
+          <li>Added a jump state, with its own attacks and hit animations</li>
+          <li>Added a versus mode, two players always facing each other</li>
+          
+          <li>Added sound volume control sliders</li>
+          <li>Moved key binders to a new tab</li>
         </ul>
       </description>
     </release>

@@ -58,7 +58,7 @@
     <release version="0.9" date="2021-01-17">
       <description>
         <ul>
-          <li>Audio & Sound</li>
+          <li>Audio &amp; Sound</li>
           <ul>
             <li>Added a flexible sound effect system</li>
             <ul>
@@ -68,7 +68,7 @@
             <li>Footstep sounds depend on the ground material</li>
             <li>Added weapon hit, ground hit, and air friction sound effects</li>
             <li>Added several musics for fight scenes</li>
-            <li>Added UI sounds for character & arena selection</li>
+            <li>Added UI sounds for character &amp; arena selection</li>
           </ul>
             
           <li>Graphics</li>
@@ -91,7 +91,7 @@
             <li>Starting position of players improved</li>
           </ul>
             
-          <li>UI & Options</li>
+          <li>UI &amp; Options</li>
           <ul>
             <li>Added sound volume control sliders</li>
             <li>Moved key binders to a new tab</li>

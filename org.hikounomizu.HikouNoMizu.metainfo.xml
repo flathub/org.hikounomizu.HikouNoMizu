@@ -56,7 +56,7 @@
   
   <releases>
     <release version="1.0.1" date="2022-10-19">
-      <description>Added internationalization support and Spanish, French as well as Norwegian translations</description>
+      <description><p>Added internationalization support and Spanish, French as well as Norwegian translations</p></description>
     </release>
 
     <release version="1.0" date="2022-08-31">

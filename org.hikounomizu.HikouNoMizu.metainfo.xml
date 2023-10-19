@@ -8,7 +8,7 @@
   <summary>Platform-based, anime-styled fighting game</summary>
 
   <metadata_license>CC0-1.0</metadata_license>
-  <project_license>GPL-3.0-only AND LAL-1.3 AND CC-BY-3.0 AND CC-BY-4.0 AND OFL-1.1</project_license>
+  <project_license>GPL-3.0-only AND CC-BY-SA-4.0 AND CC-BY-4.0 AND CC-BY-3.0 AND OFL-1.1</project_license>
 
   <recommends>
     <control>pointing</control>
@@ -55,6 +55,10 @@
   </content_rating>
   
   <releases>
+    <release version="1.0.1" date="2022-10-19">
+      <description>Added internationalization support and Spanish, French as well as Norwegian translations</description>
+    </release>
+
     <release version="1.0" date="2022-08-31">
       <description>
         <ul>

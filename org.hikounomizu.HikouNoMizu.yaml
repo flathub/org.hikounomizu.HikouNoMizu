@@ -1,6 +1,6 @@
 app-id: org.hikounomizu.HikouNoMizu
 runtime: org.freedesktop.Platform
-runtime-version: '22.08'
+runtime-version: '23.08'
 sdk: org.freedesktop.Sdk
 command: hikounomizu
 finish-args:
@@ -42,8 +42,8 @@ modules:
 
       sources:
           - type: archive
-            url: https://download.tuxfamily.org/hnm/1.0/hikounomizu-1.0-src-withdata.tar.bz2
-            sha256: a98dedd1cb907cb14037cfc207ae5fbb93999171c27ebced7e726a4561a68727
+            url: https://download.tuxfamily.org/hnm/1.0.1/hikounomizu-1.0.1-src-withdata.tar.bz2
+            sha256: 9bd6be83535c4d3d6c68c98c6c93ea494d7e9fe3ab46504e164ff447bfdfe513
 
           - type: file
             path: org.hikounomizu.HikouNoMizu.svg

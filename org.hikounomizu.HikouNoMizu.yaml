@@ -1,6 +1,6 @@
 app-id: org.hikounomizu.HikouNoMizu
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 command: hikounomizu
 finish-args:
@@ -16,8 +16,6 @@ cleanup:
     - '*.la'
     - '*.a'
 modules:
-    - 'shared-modules/SDL2/SDL2-with-libdecor.json'
-
     - name: pugixml
       buildsystem: cmake
       sources:
@@ -42,8 +40,8 @@ modules:
 
       sources:
           - type: archive
-            url: https://download.tuxfamily.org/hnm/1.0.1/hikounomizu-1.0.1-src-withdata.tar.bz2
-            sha256: 9bd6be83535c4d3d6c68c98c6c93ea494d7e9fe3ab46504e164ff447bfdfe513
+            url: https://download.tuxfamily.org/hnm/1.1/hikounomizu-1.1-src-withdata.tar.bz2
+            sha256: 7e6128a52ab802f551c7e3eaf62757045bcc162fc3a2e7f916ece3cf584823b9
 
           - type: file
             path: org.hikounomizu.HikouNoMizu.svg

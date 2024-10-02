@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2023 Duncan Deveaux <duncan_AT_hikounomizu.org> -->
+<!-- Copyright 2024 Duncan Deveaux <duncan_AT_hikounomizu.org> -->
 
 <component type="desktop-application">
   <id>org.hikounomizu.HikouNoMizu</id>
@@ -49,17 +49,34 @@
       <image>https://download.tuxfamily.org/hnm/1.0/screenshots/screen4.png</image>
     </screenshot>
   </screenshots>
-  
+
   <content_rating type="oars-1.1">
     <content_attribute id="violence-fantasy">moderate</content_attribute>
   </content_rating>
-  
+
   <releases>
-    <release version="1.0.1" date="2022-10-19">
+    <release version="1.1" date="2024-10-02">
+      <description>
+        <ul>
+          <li>Added blocking and perfect blocking support</li>
+          <li>Tweaked animation and hit timings</li>
+          <li>Rewrote the AI to be smarter and more challenging</li>
+          <li>Drastically improved text rendering performance by implementing a font atlas</li>
+          <li>Added a simple particle system, triggered on perfect blocks</li>
+          <li>Added a player event banner, to notify of perfect blocks</li>
+          <li>Added a visualization of block boxes in the 'show hitboxes' mode</li>
+          <li>Added an Esperanto translation</li>
+          <li>Fixed camera shake sometimes not triggering in networked mode</li>
+          <li>Fixed the player-to-ground collision check at high framerates</li>
+        </ul>
+      </description>
+    </release>
+
+    <release version="1.0.1" date="2023-10-19">
       <description><p>Added internationalization support and Spanish, French as well as Norwegian translations</p></description>
     </release>
 
-    <release version="1.0" date="2022-08-31">
+    <release version="1.0" date="2023-08-31">
       <description>
         <ul>
           <li>Introduced networked multiplayer gaming!</li>

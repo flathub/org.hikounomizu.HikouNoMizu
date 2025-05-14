@@ -56,7 +56,7 @@ modules:
               - type: html
                 url: https://hikounomizu.org/download.html
                 version-pattern: Hikou no mizu ([\d\.-]*) is the latest available stable release.
-                url-template: https://download.tuxfamily.org/hnm/$version/hikounomizu-$version-src-withdata.tar.bz2
+                url-template: https://gitlab.com/api/v4/projects/9166374/packages/generic/hikounomizu/$version/hikounomizu-$version-src-withdata.tar.bz2
 
           - type: file
             path: org.hikounomizu.HikouNoMizu.svg

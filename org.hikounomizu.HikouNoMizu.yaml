@@ -23,9 +23,9 @@ modules:
             url: https://github.com/zeux/pugixml/releases/download/v1.14/pugixml-1.14.tar.gz
             sha256: 2f10e276870c64b1db6809050a75e11a897a8d7456c4be5c6b2e35a11168a015
             x-checker-data:
-              - type: anitya
-                id: 3728
-                url-template: https://github.com/zeux/pugixml/releases/download/v$version/pugixml-$version.tar.gz
+              type: anitya
+              project-id: 3728
+              url-template: https://github.com/zeux/pugixml/releases/download/v$version/pugixml-$version.tar.gz
 
     - name: enet
       sources:
@@ -33,9 +33,9 @@ modules:
             url: https://github.com/lsalzman/enet/archive/refs/tags/v1.3.18.tar.gz
             sha256: 28603c895f9ed24a846478180ee72c7376b39b4bb1287b73877e5eae7d96b0dd
             x-checker-data:
-              - type: anitya
-                id: 696
-                url-template: https://github.com/lsalzman/enet/archive/refs/tags/v$version.tar.gz
+              type: anitya
+              project-id: 696
+              url-template: https://github.com/lsalzman/enet/archive/refs/tags/v$version.tar.gz
           - type: shell
             commands:
               - autoreconf -vfi
@@ -53,10 +53,10 @@ modules:
             url: https://gitlab.com/api/v4/projects/9166374/packages/generic/hikounomizu/1.1/hikounomizu-1.1-src-withdata.tar.bz2
             sha256: 7e6128a52ab802f551c7e3eaf62757045bcc162fc3a2e7f916ece3cf584823b9
             x-checker-data:
-              - type: html
-                url: https://hikounomizu.org/download.html
-                version-pattern: Hikou no mizu ([\d\.-]*) is the latest available stable release.
-                url-template: https://gitlab.com/api/v4/projects/9166374/packages/generic/hikounomizu/$version/hikounomizu-$version-src-withdata.tar.bz2
+              type: html
+              url: https://hikounomizu.org/download.html
+              version-pattern: Hikou no mizu ([\d\.-]*) is the latest available stable release.
+              url-template: https://gitlab.com/api/v4/projects/9166374/packages/generic/hikounomizu/$version/hikounomizu-$version-src-withdata.tar.bz2
 
           - type: file
             path: org.hikounomizu.HikouNoMizu.svg

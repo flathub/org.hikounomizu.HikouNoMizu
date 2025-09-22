@@ -40,7 +40,7 @@ modules:
 
       sources:
           - type: archive
-            url: https://download.tuxfamily.org/hnm/1.1/hikounomizu-1.1-src-withdata.tar.bz2
+            url: https://gitlab.com/api/v4/projects/9166374/packages/generic/hikounomizu/1.1/hikounomizu-1.1-src-withdata.tar.bz2
             sha256: 7e6128a52ab802f551c7e3eaf62757045bcc162fc3a2e7f916ece3cf584823b9
 
           - type: file

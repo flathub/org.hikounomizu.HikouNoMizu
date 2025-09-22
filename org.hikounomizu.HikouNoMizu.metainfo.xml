@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2024 Duncan Deveaux <duncan_AT_hikounomizu.org> -->
+<!-- Copyright 2025 Duncan Deveaux <duncan_AT_hikounomizu.org> -->
 
 <component type="desktop-application">
   <id>org.hikounomizu.HikouNoMizu</id>
@@ -34,19 +34,19 @@
   <launchable type="desktop-id">org.hikounomizu.HikouNoMizu.desktop</launchable>
   <screenshots>
     <screenshot type="default">
-      <image>https://download.tuxfamily.org/hnm/1.0/screenshots/screen7.png</image>
+      <image>https://gitlab.com/api/v4/projects/9166374/packages/generic/hikounomizu/1.1/screenshots/screen7.png</image>
     </screenshot>
     <screenshot>
-      <image>https://download.tuxfamily.org/hnm/1.0/screenshots/screen12.png</image>
+      <image>https://gitlab.com/api/v4/projects/9166374/packages/generic/hikounomizu/1.1/screenshots/screen12.png</image>
     </screenshot>
     <screenshot>
-      <image>https://download.tuxfamily.org/hnm/1.0/screenshots/screen13.png</image>
+      <image>https://gitlab.com/api/v4/projects/9166374/packages/generic/hikounomizu/1.1/screenshots/screen13.png</image>
     </screenshot>
     <screenshot>
-      <image>https://download.tuxfamily.org/hnm/1.0/screenshots/screen15.png</image>
+      <image>https://gitlab.com/api/v4/projects/9166374/packages/generic/hikounomizu/1.1/screenshots/screen15.png</image>
     </screenshot>
     <screenshot>
-      <image>https://download.tuxfamily.org/hnm/1.0/screenshots/screen4.png</image>
+      <image>https://gitlab.com/api/v4/projects/9166374/packages/generic/hikounomizu/1.1/screenshots/screen4.png</image>
     </screenshot>
   </screenshots>
 

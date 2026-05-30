@@ -1,68 +1,71 @@
 app-id: org.hikounomizu.HikouNoMizu
 runtime: org.freedesktop.Platform
-runtime-version: '24.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 command: hikounomizu
 finish-args:
-    - '--device=all'
-    - '--share=network'
-    - '--share=ipc'
-    - '--socket=wayland'
-    - '--socket=fallback-x11'
-    - '--socket=pulseaudio'
+  - --device=all
+  - --share=network
+  - --share=ipc
+  - --socket=wayland
+  - --socket=fallback-x11
+  - --socket=pulseaudio
 cleanup:
-    - /include
-    - /lib/pkgconfig
-    - '*.la'
-    - '*.a'
+  - /include
+  - /lib/cmake
+  - /lib/pkgconfig
+  - '*.la'
+  - '*.a'
 modules:
-    - name: pugixml
-      buildsystem: cmake
-      sources:
-          - type: archive
-            url: https://github.com/zeux/pugixml/releases/download/v1.15/pugixml-1.15.tar.gz
-            sha256: 655ade57fa703fb421c2eb9a0113b5064bddb145d415dd1f88c79353d90d511a
-            x-checker-data:
-              type: anitya
-              project-id: 3728
-              url-template: https://github.com/zeux/pugixml/releases/download/v$version/pugixml-$version.tar.gz
+  - shared-modules/SDL2/SDL2_image.json
 
-    - name: enet
-      sources:
-          - type: archive
-            url: https://github.com/lsalzman/enet/archive/refs/tags/v1.3.18.tar.gz
-            sha256: 28603c895f9ed24a846478180ee72c7376b39b4bb1287b73877e5eae7d96b0dd
-            x-checker-data:
-              type: anitya
-              project-id: 696
-              url-template: https://github.com/lsalzman/enet/archive/refs/tags/v$version.tar.gz
-          - type: shell
-            commands:
-              - autoreconf -vfi
+  - name: pugixml
+    buildsystem: cmake
+    sources:
+      - type: archive
+        url: https://github.com/zeux/pugixml/releases/download/v1.15/pugixml-1.15.tar.gz
+        sha256: 655ade57fa703fb421c2eb9a0113b5064bddb145d415dd1f88c79353d90d511a
+        x-checker-data:
+          type: anitya
+          project-id: 3728
+          url-template: https://github.com/zeux/pugixml/releases/download/v$version/pugixml-$version.tar.gz
 
-    - name: hikounomizu
-      buildsystem: cmake
-      config-opts: [ '-DHNM_NOSERVER=1' ]
-      post-install:
-          - 'install -Dm644 org.hikounomizu.HikouNoMizu.svg /app/share/icons/hicolor/scalable/apps/org.hikounomizu.HikouNoMizu.svg'
-          - 'install -Dm644 org.hikounomizu.HikouNoMizu.desktop /app/share/applications/org.hikounomizu.HikouNoMizu.desktop'
-          - 'install -Dm644 org.hikounomizu.HikouNoMizu.metainfo.xml /app/share/metainfo/org.hikounomizu.HikouNoMizu.metainfo.xml'
+  - name: enet
+    sources:
+      - type: archive
+        url: https://github.com/lsalzman/enet/archive/refs/tags/v1.3.18.tar.gz
+        sha256: 28603c895f9ed24a846478180ee72c7376b39b4bb1287b73877e5eae7d96b0dd
+        x-checker-data:
+          type: anitya
+          project-id: 696
+          url-template: https://github.com/lsalzman/enet/archive/refs/tags/v$version.tar.gz
+      - type: shell
+        commands:
+          - autoreconf -vfi
 
-      sources:
-          - type: archive
-            url: https://gitlab.com/api/v4/projects/9166374/packages/generic/hikounomizu/1.1/hikounomizu-1.1-src-withdata.tar.bz2
-            sha256: 7e6128a52ab802f551c7e3eaf62757045bcc162fc3a2e7f916ece3cf584823b9
-            x-checker-data:
-              type: html
-              url: https://hikounomizu.org/download.html
-              version-pattern: Hikou no mizu ([\d\.-]*) is the latest available stable release.
-              url-template: https://gitlab.com/api/v4/projects/9166374/packages/generic/hikounomizu/$version/hikounomizu-$version-src-withdata.tar.bz2
+  - name: hikounomizu
+    buildsystem: cmake
+    config-opts:
+      - -DHNM_NOSERVER=1
+    post-install:
+        - install -Dm644 ${FLATPAK_ID}.svg -t /app/share/icons/hicolor/scalable/apps/
+        - install -Dm644 ${FLATPAK_ID}.desktop -t /app/share/applications/
+        - install -Dm644 ${FLATPAK_ID}.metainfo.xml -t /app/share/metainfo/
+    sources:
+        - type: archive
+          url: https://gitlab.com/api/v4/projects/9166374/packages/generic/hikounomizu/1.1/hikounomizu-1.1-src-withdata.tar.bz2
+          sha256: 7e6128a52ab802f551c7e3eaf62757045bcc162fc3a2e7f916ece3cf584823b9
+          x-checker-data:
+            type: html
+            url: https://hikounomizu.org/download.html
+            version-pattern: Hikou no mizu ([\d\.-]*) is the latest available stable release.
+            url-template: https://gitlab.com/api/v4/projects/9166374/packages/generic/hikounomizu/$version/hikounomizu-$version-src-withdata.tar.bz2
 
-          - type: file
-            path: org.hikounomizu.HikouNoMizu.svg
+        - type: file
+          path: org.hikounomizu.HikouNoMizu.svg
 
-          - type: file
-            path: org.hikounomizu.HikouNoMizu.desktop
+        - type: file
+          path: org.hikounomizu.HikouNoMizu.desktop
 
-          - type: file
-            path: org.hikounomizu.HikouNoMizu.metainfo.xml
+        - type: file
+          path: org.hikounomizu.HikouNoMizu.metainfo.xml
